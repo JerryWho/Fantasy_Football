@@ -42,7 +42,7 @@ mergedDat$FantasyPoints = with(mergedDat, (Rec.Yds + Rush.Yds)/ydpoints + (Rec.T
   tdpoints + FumL * fumlpoints, na.rm=F)
 
 ##Since total fantasy points is affected by number of games played, it might be better to look at fantasy points per game
-mergedDat$fpPergame  <- mergedDat$FantasyPoints/fdat$G
+mergedDat$fpPergame  <- mergedDat$FantasyPoints/mergedDat$G
 
 ##Trim whitespace in front of names
 mergedDat  <- trim(mergedDat)
