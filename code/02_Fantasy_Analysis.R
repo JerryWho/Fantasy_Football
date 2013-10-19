@@ -13,14 +13,6 @@ str(fdat)
 head(fdat)
 
 
-  
-violin_p <- ggplot(fdat, aes(x=Position, y=fpPergame)) + geom_violin(alpha=0.7) + facet_grid(year ~.) + 
-  aes(fill=Position) + scale_fill_brewer(palette="Dark2") + ylab("Fantasy Points/Game") +
-  ggtitle("Distribution of Fantasy Points/Game by Position and Year")
-
-
-print(violin_p)
-ggsave("violin_plot_fantasy_points_per_game.png", path = "figures")
 
 #Find the highest fantasy scorer for each team, for each year using plyr
   
@@ -58,6 +50,19 @@ bar_p  <- ggplot(highestScorer, aes(x=Position, y=FantasyPoints, fill=Position))
 
 print(bar_p)
 ggsave("bar_chart_total_fp_by_position_from_highest_scorers.png", path = 'figures') 
+
+vp  <- ggplot(fdat, aes(x=Position, y=fpPergame)) + geom_violin(alpha=0.7) + facet_grid(year ~.) + 
+  aes(fill=Position) + scale_fill_brewer(palette="Dark2") + ylab("Fantasy Points/Game") +
+  ggtitle("Distribution of Fantasy Points/Game by Position and Year")
+
+print(vp)
+ggsave("violin_plot_fp_per_game_by_pos_year.png", path ='figures')
+
+dev.off()
+
+
+
+
 
 
 
