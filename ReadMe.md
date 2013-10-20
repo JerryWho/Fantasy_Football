@@ -10,7 +10,7 @@ The data files RB.txt, TE.txt, and WR.txt all the raw data files used to conduct
 
 1. *01_Merging_Data.R* - merges the data into one dataframe and computes the fantasy points and fantasy points per game for all players.
 2. *02_Fantasy_Analysis.R* - creates ggplot2 graphs to help visualize the data
-3. *Source_Script.R* - deletes all files created by the scripts and sources them
+3. *Source_Script.R* - deletes all files created by the scripts and sources the other two scripts
 
 In particular, this analysis seeks to compare the relative fantasy values of running backs (RB), wide receivers (WR) and tight ends (TE).
 
