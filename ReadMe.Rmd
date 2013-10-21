@@ -9,10 +9,10 @@ This repository was built to conduct data visualization and analysis of fantasy 
 The data files RB.txt, TE.txt, and WR.txt all the raw data files used to conduct this analysis.  It consists of three R scripts. 
 
 1. *01_Merging_Data.R* - merges the data into one dataframe and computes the fantasy points and fantasy points per game for all players.
-2. *02_Fantasy_Analysis.R* - creates ggplot2 graphs to help visualize the data
+2. *02_Fantasy_Analysis.R* - creates ggplot2 graphs to help visualize the data and creates a dataset (*highestScorer.txt*) with the top fantasy scorers in each of the three positions.
 3. *Source_Script.R* - deletes all files created by the scripts and sources the other two scripts
 
-In particular, this analysis seeks to compare the relative fantasy values of running backs (RB), wide receivers (WR) and tight ends (TE).
+In particular, this analysis seeks to compare the relative fantasy values of running backs (RB), wide receivers (WR) and tight ends (TE).  Conventional wisdom in fantasy football is that the running back position is where you make your money.  But as the NFL focuses more on the passing game and as players take on multiple roles, does this strategy warrant a review?  
 
 
 
